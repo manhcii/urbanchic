@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+// COLOR
+$white: #fff;
+$white-2: #f9f9f9;
+$black: #000;
+$black-2: #202020;
+$black-3: #363636;
+$red-1: #5e090a;
+$red-2: #ea0000;
+$beige: #faf1e9;
+$gray: #979797;
+$gray-2: #d9d9d9;
+$gray-3: #616161;
+$gray-4: #ededed;
+
+// FONT FAMILY
+$font-roboto: "Roboto", sans-serif;
+$font-manrope: "Manrope", sans-serif;
+$font-arizonia: "Arizonia", cursive;
+
+// FONT WEIGHT
+$fw-thin: 100;
+$fw-extraLight: 200;
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semiBold: 600;
+$fw-bold: 700;
+$fw-black: 900;
+
+// DIMENSION
+$border-radius-xs: 3px;
+
+// MIXIN
+@mixin flex($just, $align, $gap) {
+  display: flex;
+  justify-content: $just;
+  align-items: $align;
+  gap: $gap;
+}
+
+// KEYFRAMES
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(7%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}

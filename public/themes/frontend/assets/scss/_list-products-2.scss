@@ -1,0 +1,27 @@
+// START BANNER
+#fhm-lp2-banner {
+  margin-top: 56px;
+  .banner-wrapper {
+    background: url(../images/banners/lpv2-banner.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 250px;
+    position: relative;
+    padding-right: 20px;
+    .heading-block {
+      position: absolute;
+      bottom: 47px;
+      left: 58px;
+      color: $white;
+    }
+  }
+}
+// END BANNER
+
+// START PRODUCTS
+#fhm-lp2-content {
+  .products {
+    margin-top: 58px;
+  }
+}
+// END PRODUCTS

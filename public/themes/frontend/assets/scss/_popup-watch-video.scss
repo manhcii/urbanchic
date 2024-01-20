@@ -1,0 +1,39 @@
+@import './variable';
+
+//**CSS Popup home video**//
+.popup-watch-video {
+    .modal-body {
+        video {
+            width: 100%;
+        }
+    }
+
+    .button-close {
+        position: absolute;
+        right: -10px;
+        top: -10px;
+        background: #fff;
+        border-radius: 50%;
+        width: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 32px;
+    
+        .btn-close {
+            width: 6px;
+            height: 6px;
+        }
+    }
+}
+
+
+
+.popup-video-iframe {
+    width: 100%;
+
+    iframe {
+        aspect-ratio: 6/4;
+        width: 100%;
+    }
+}

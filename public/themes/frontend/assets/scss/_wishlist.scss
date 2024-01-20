@@ -1,0 +1,132 @@
+// START BANNER
+#fhm-wishlist-banner {
+  padding: 80px 0 49px;
+  .title,
+  .desc {
+    text-align: center;
+  }
+  .title {
+    font-size: 38px;
+    line-height: 66px;
+    font-weight: $fw-black;
+    margin-bottom: 10px;
+  }
+  .desc {
+    font-size: 16px;
+    line-height: 16px;
+    color: $gray-3;
+  }
+}
+// END BANNER
+
+// START WISHLIST
+.wishlist {
+  .wishlist-quick-select {
+    background-color: $white-2;
+    padding: 14px 20px;
+    @include flex(start, center, 45px);
+    border: 1px solid #dedede;
+    .select-all {
+      @include flex(unset, center, 20px);
+    }
+    .select-all,
+    .unselect-all {
+      button {
+        font-size: 14px;
+        line-height: 16px;
+        color: $gray-3;
+      }
+    }
+  }
+  table {
+    margin-bottom: 50px;
+    tr {
+      td {
+        padding-top: 25px;
+        padding-bottom: 25px;
+      }
+    }
+  }
+  .products-list-pagination-page {
+    justify-content: end;
+  }
+  .cart-product {
+    .cart-checkbox,
+    .cart-quantity,
+    .cart-price,
+    .cart-delete,
+    .cart-add {
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .cart-checkbox {
+      width: 20px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .cart-img {
+      width: 100px;
+      img {
+        width: 100%;
+      }
+    }
+    .cart-info {
+      width: 300px;
+    }
+    .cart-quantity {
+      .cart-quantity-form {
+        margin: 0 auto;
+      }
+      span {
+        margin-top: 20px;
+        display: inline-block;
+      }
+    }
+    .cart-price {
+      h4,
+      span {
+        text-align: center;
+        display: block;
+      }
+    }
+    .cart-delete {
+      padding: 25px 8px;
+      button {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .cart-add {
+      width: 200px;
+      .button-solid {
+        padding: 13px 30px;
+        min-width: unset;
+        font-size: 14px;
+        margin: 0 auto;
+        display: block;
+        &:hover {
+          .icon {
+            img {
+              filter: invert(1);
+            }
+          }
+        }
+        .icon {
+          width: 16px;
+          display: none;
+          img {
+            transition: all ease 0.75s;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+// END WISHLIST
+
+// START RELATE PRODUCT
+#fhm-wishlist-relate {
+  margin-bottom: 100px;
+}
+// END RELATE PRODUCT

@@ -1,0 +1,222 @@
+@import './variable';
+
+//**CSS Page Contact Us **//
+.page-contact {
+    margin: 80px 0 120px;
+    overflow: hidden;
+
+    .module-content {
+        margin-bottom: 80px;
+
+        p {
+            max-width: 606px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.page-contact-main {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 24px;
+    row-gap: 32px;
+    margin-bottom: 80px;
+
+    h3 {
+        margin-bottom: 15px;
+        font-size: 24px;
+        line-height: normal;
+        font-family: $font-extra-bold;
+    }
+
+    .page-contact-form-des {
+        margin-bottom: 18px;
+        color: $add-dark;
+    }
+
+    .icon-leaf {
+        position: absolute;
+
+        &:nth-child(3) {
+            left: -10%;
+            top: -15%;
+        }
+
+        &:nth-child(4) {
+            left: -18%;
+            bottom: -15%;
+        }
+
+        &:nth-child(5) {
+            left: 23%;
+            bottom: -8%;
+        }
+
+        &:nth-child(6) {
+            right: -15%;
+            top: -20%;
+        }
+
+        &:nth-child(7) {
+            right: -15%;
+            bottom: -15%;
+        }
+    }
+}
+
+.page-contact-info {
+    padding: 0 24px 13px;
+    border-radius: 16px;
+    box-shadow: 0px 0px 56px 0px rgba(0, 38, 3, 0.08);
+    flex: 0 0 27.1%;
+    max-width: 27.1%;
+
+    .contact-info-item {
+        padding: 24px 0;
+        border-bottom: 1px solid $add-grey;
+    
+        img {
+            display: block;
+            margin: 0 auto 16px;
+        }
+
+        a {
+            display: block;
+        }
+    
+        p {
+            color: $primary;
+        }
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
+
+.page-contact-form {
+    flex: 1;
+    border-radius: 16px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.10);
+    padding: 44px 50px 57px;
+
+    .contact-form-row {
+        row-gap: 16px;
+
+        .contact-form-line {
+            input, textarea {
+                border-radius: 6px;
+                padding: 13px 16px;
+                font-size: 16px;
+                line-height: 130%; 
+
+                &:focus-within {
+                    border: 1px solid $secondary;
+                }
+            }
+        }
+    }
+
+    .button-submit {
+        font-size: 12px;
+        font-family: $font-semi-bold;
+        line-height: normal;
+        letter-spacing: 1.2px;
+        border-radius: 50px;
+        border: 1px solid $secondary;
+        padding: 13px 39px;
+        color: #fff;    
+        background: linear-gradient(120deg,  $secondary 50%, #fff 50%);
+        background-position: top left 10%;
+        background-size: 250%;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-position: top left 100%; 
+            color: #000;
+            border: 1px solid #000;
+        }
+    }
+}
+
+.page-contact-map {
+    position: relative;
+    padding-bottom: 205px;
+    margin-bottom: 120px;
+
+    .page-contact-iframe {
+        position: relative;
+        z-index: 2;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 1160/434;
+            border-radius: 16px;
+            border: 3px solid #FFF !important;
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.30);
+        }
+    }
+
+    .page-contact-map-back {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+//**************Responsive Page Contact Us*******************//
+@include tablet {
+    .page-contact-main {
+        flex-wrap: wrap-reverse;
+
+        .icon-leaf {
+            display: none;
+        }
+    }
+
+    .page-contact-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 58px;
+    }
+
+    .page-contact-map {
+        padding-bottom: 120px;
+        margin-bottom: 40px;
+    
+        .page-contact-iframe {
+            iframe {
+                width: 100%;
+                height: 100%;
+                aspect-ratio: 388/360;
+            }
+        }
+    }
+
+    .page-contact-map-back {
+        aspect-ratio: 600/300;
+    }
+}
+
+@include landscape-phone {
+    .page-contact {
+        .module-content {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@include extra-mobile {
+    .page-contact-map-back {
+        aspect-ratio: 428/352;
+    }
+}

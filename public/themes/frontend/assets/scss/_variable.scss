@@ -1,0 +1,142 @@
+//**Font face**//
+@font-face {
+  font-family: "Urbanist-extra-light";
+  src: url('../fonts/Urbanist-ExtraLight.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Urbanist-light";
+  src: url('../fonts/Urbanist-Light.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Urbanist-regular";
+  src: url('../fonts/Urbanist-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Urbanist-medium";
+  src: url('../fonts/Urbanist-Medium.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Urbanist-semi-bold";
+  src: url('../fonts/Urbanist-SemiBold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Urbanist-bold";
+  src: url('../fonts/Urbanist-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Urbanist-extra-bold";
+  src: url('../fonts/Urbanist-ExtraBold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Urbanist-black";
+  src: url('../fonts/Urbanist-Black.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Londrina-Regular";
+  src: url('../fonts/LondrinaSolid-Regular.ttf') format("truetype");
+}
+
+$font-extra-light: "Urbanist-extra-light", sans-serif;
+$font-light: "Urbanist-light", sans-serif;
+$font-regular: "Urbanist-regular", sans-serif;
+$font-medium: "Urbanist-medium", sans-serif;
+$font-semi-bold: "Urbanist-semi-bold", sans-serif;
+$font-bold: "Urbanist-bold", sans-serif;
+$font-extra-bold: "Urbanist-extra-bold", sans-serif;
+$font-black: "Urbanist-black", sans-serif;
+
+$font-londrina-regular: "Londrina-Regular", sans-serif;
+
+
+//Variable colors
+$primary: #121212;
+$primary-sub: #000;
+
+$secondary: #6D8434;
+$light-orange: #FDC151;
+$light-green: #0BA360;
+$blue-white: #EEEFF2;
+
+$add-dark: #656668;
+$add-dark-grey: #A1A1A1;
+$add-grey: #D1D3D5;
+$add-light-grey: #EFEFEF;
+$milk-white: #F2F0EA;
+
+
+
+//*************@media***************//
+
+@mixin min-extra-desktop {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin min-desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin extra-desktop {
+  @media (max-width: 1599px) {
+    @content;
+  }
+}
+
+@mixin large-desktop {
+  @media only screen and (max-width: 1399px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (max-width: 1199px) {
+    @content;
+  }
+}
+
+@mixin small-desktop {
+  @media only screen and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media only screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin landscape-phone {
+  @media only screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin extra-mobile {
+  @media only screen and (max-width: 576px){
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin small-mobile {
+  @media only screen and (max-width: 391px) {
+    @content;
+  }
+}
